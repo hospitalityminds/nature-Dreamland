@@ -1,5 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-.ionicframework.com	TRUE	/	FALSE	1999999999	__cfduid	d2ff97e6542484ea681f8d1ec571221661608543426
-code.ionicframework.com	TRUE	/	FALSE	1999999999	SameSite	Lax
-
