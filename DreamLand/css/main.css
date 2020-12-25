@@ -1,0 +1,993 @@
+body{
+    overflow-x: hidden;
+}
+
+.logo{
+    max-width: 120px;
+}
+
+.side-menu{
+  display: flex!important;
+  flex-direction: row!important;
+  align-items: center;
+  width: 900px;
+  justify-content: space-between;
+}
+
+.side-menu li a:hover{
+  text-decoration: none;
+  color: white!important;
+}
+
+.img-gallery{
+   width: 370px;
+    height: 250px;
+}
+
+.room-h1{
+  text-align: center;
+  padding: 70px 0;
+  margin: 0;
+}
+
+.room-button{
+  padding:10px;
+  border:2px solid  #76e045;
+  border-radius: 4px;
+  font-size: 20px;
+  color: #76e045;
+  font-weight: 800;
+  text-transform: uppercase;
+  transition: .2s ease-in;
+}
+
+
+.room-button:hover{
+  text-decoration: none;
+  background:  #76e045;
+  color: whitesmoke;
+}
+
+
+.dropdown .dropdown-menu a{
+  font-size: 17px;
+  padding: 7px;
+}
+
+.dropdown .dropdown-menu a:hover{
+  background: #D0E5B0;
+}
+
+
+
+.swiper{
+  padding: 50px 0;
+}
+
+.carousel-inner{
+  width: 100%;
+  height: 550px;
+ 
+}
+
+.carousel-item{
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* ***************************  Social bar   ******************************* */
+
+
+.social-bar{
+  height: 40px;
+  padding:5px 30px;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #76e045;
+  transition: .4s;
+}
+
+.social-bar .social-icons{
+  display: flex;
+  justify-content: space-evenly;
+  width: 200px;
+}
+
+.social-bar .social-icons img{
+  width: 25px;
+}
+
+.social-bar h3{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.social-bar span{
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.social-bar h3{
+  font-size: 16px;
+  font-weight: 600;
+    color: whitesmoke;
+}
+
+.social-bar span{
+  font-size: 17px;
+  font-weight: 800;
+}
+
+
+.social-none{
+  display: none;
+}
+
+
+
+.background{
+  background: #e5ffd9;
+}
+
+
+/* *********************  Section 2  Courses  start   ************************ */
+
+.section-2 {
+    padding: 80px 0;
+    position: relative;
+  }
+  
+  .section-2 .title {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  
+  .course-grid {
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-column-gap: 30px;
+    grid-row-gap: 50px;
+  }
+  
+  .course-grid .block {
+    padding: 40px 10px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    transition: .4s ease-in-out;
+    border-radius: 12px;
+    background: var(--light-background-color);
+    z-index: 111;
+    /* transition:1s ease-in; */
+  }
+  
+  
+  .course-grid .block img{
+    width: 100%;
+    height: 70px;
+  }
+  
+  .course-grid .block path {
+    transition: .3s ease-in;
+  }
+  
+  
+  .course-grid .block h2 {
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--block-color);
+    margin: 0;
+  }
+  
+  .course-grid .block p {
+    padding-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--block-color);
+    margin: 0;
+  }
+  
+  .course-grid .block:hover {
+    color: var(--title-color);
+    background: linear-gradient(to bottom ,var(--button-color) , var(--gradient-color));
+  }
+  
+  .course-grid .block:hover h2 {
+    color: var(--title-color);
+  }
+  
+  .course-grid .block:hover svg path {
+    fill: var(--title-color);
+  }
+  
+  /* *** section 2 end **** */
+  
+
+
+
+  
+
+/* ***************************  Section 3  *************************** */
+
+.section-3{
+    padding:0 0 80px 0;
+ }
+ 
+ .section-3 hr{
+   margin:0;
+ }
+ 
+ .section-3 .sub-title{
+     text-align: center;
+   padding:30px 20px 20px;
+   font-size: 60px;
+ }
+
+ .section-3 .para{
+     margin: 0 auto;
+     max-width: 1000px;
+     text-align: center;
+    padding:0px 20px 40px;
+    font-size: 20px;
+  }
+ 
+ .work-grid{
+   /* padding: 0 50px; */
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+   grid-column-gap: 20px;  
+   grid-row-gap: 50px;
+ }
+ 
+ .work-grid .block{
+   margin:0 auto;
+   width: 100%;
+   height: 300px;
+   background-color:white;
+   overflow: hidden;
+   transition: .3s ease-in-out;
+   position: relative;
+ }
+ 
+ .work-grid .block .img-container{
+   width: 100%;
+   overflow: hidden;
+ }
+ 
+ .work-grid .block .img-container img{
+   width: 100%;
+   height: 300px;
+   transition: .2s ease-in;
+ }
+ 
+ 
+ .work-grid .block .text{
+   padding:20px;
+   text-align: left;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   bottom:0;
+   left: 0;
+   background: whitesmoke;
+   display: flex;
+   flex-direction: row;
+   align-items:flex-end;
+   transform: translatey(100%);
+    transition: .4s;
+ }
+ 
+ 
+ .work-grid .block .block-title{
+  font-size:30px;
+  font-weight: 600;
+  color: var(--text-color);
+ }
+ 
+ .work-grid .block .block-para{
+  font-size:16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: var(--text-color);
+ }
+ 
+ .work-grid .block:hover .text{
+    transform: translatey(0);
+ }
+
+ .work-grid .block:hover .text{
+    transform: translatey(0);
+ }
+ 
+ 
+ 
+ 
+ /* ********  section 3 end  *********** */
+ 
+
+
+
+ 
+/* ******************************* About   Section start  ******************************** */
+
+
+.section{
+    padding:60px 0;
+  }
+  
+  .section-flex{ 
+    display: flex;
+    flex: 100%;
+    flex-wrap: wrap;
+  }
+  
+   .section-flex .section-left{
+      flex:50%;
+      position: relative;
+  }
+  
+   .section .content{
+       padding: 20px;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border:3px solid #76e045;
+  }
+  
+   .section .title{
+    color: #76e045;
+    margin: 0;
+    font-size:45px;
+    font-weight: 700;
+    text-transform: normal;
+    max-width: 500px;
+  }
+  
+    .section .subtitle{
+      color: var(--text-light-color);
+      margin: 0;
+      font-size:24px;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+   
+   .section .para{
+      max-width: 100%;
+      margin:20px 0; 
+      font-size: 20px;
+      font-weight: 500;
+      text-align:left;
+      /* color: var(--border-dark-color); */
+   }
+   
+  
+   .section a{
+    border:none;
+    font-size: 18px;
+    color: var(--main-color);
+    font-weight: 700;
+    text-transform: capitalize;
+    transition: .3s;
+  }
+  
+   /* .section a img{
+    padding-left:8px;  
+    max-width: 500px;
+  } */
+  
+   .section-flex .section-right{
+    flex:50%;
+    display: flex;
+    align-items: center;
+    padding: 20px;  
+    margin-top: 180px;
+    margin-left: -400px;
+    z-index: 1;
+    background: white;
+  }
+   
+   /* .section .section-img-container{
+    width: 100%;
+    position: relative;
+  } */
+  
+   .section .section-img{
+      width: 100%;
+      max-width: 550px;
+      height: 350px;
+  }
+
+
+
+
+  .tent-room{
+    padding: 100px 0;
+}
+
+
+.home-resturant{
+  padding:40px 0;
+}
+
+.home-resturant .section-flex .section-right{
+  margin-top: 170px;
+  margin-left: -200px;
+}
+
+
+
+
+
+
+  
+
+/* **************************  Footer start  ************************* */
+
+
+.footer{
+    padding: 50px 0px 10px;
+    /* background: #cfa357; */
+    /* background:  #d2ab67; */
+    background:#3f3b3b;
+    background: #654321;
+  }
+
+  footer img{
+    max-width: 180px;
+}
+
+  .footer h4{
+    font-size: 22px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    font-family: 'Roboto', sans-serif!important;
+    color:#efecec;
+}
+
+.footer .social-links{
+    margin:20px 0px;
+}
+
+.footer .social-links i{
+    margin:0 10px;
+    font-size: 26px!important;
+    transition: .3s;
+    color: #d2ab67;
+}
+
+.footer .social-links i:hover{
+    color:#d2ab67;
+    opacity: .7;
+}
+
+.footer p{
+    text-align: left;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif!important;
+    font-weight: 700!important;
+    color:#ede7cf;
+}
+
+.footer p i{
+   margin:10px 0;
+   margin-right:8px;
+}
+
+.footer .col-md-12 p{
+    max-width: 100%!important;
+    text-align: center;
+    font-weight: 700!important;
+    font-size: 16px!important;
+    font-family: 'Roboto', sans-serif!important;
+}
+
+footer ul li{
+    list-style: none;
+     padding:4px 0;
+}
+
+footer ul li a,
+footer a{
+    font-weight: 500;
+    list-style: none;
+    font-size: 17px;
+    color: whitesmoke;
+}
+
+
+footer ul li a:hover,
+footer a:hover{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    font-size: 17px;
+    opacity: .7;
+}
+  
+  
+
+
+
+/* *******************************  Safety start  ************************** */
+
+/* .safety{
+  padding: 30px 0 80px;
+} */
+
+.safety .title {
+   text-align: center;
+    font-size: 65px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #76e045;
+}
+
+
+ .safety .course-grid .block img{
+  max-width: 80px;
+  height: 80px;
+}
+
+
+ .safety .course-grid .block h2 {
+  padding-top: 25px;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+
+
+
+
+
+/* *****************************  Rooms start  ************************** */
+
+
+/* ******************  section 1 start  ******************* */
+
+.room-container{
+  padding:80px 0;
+}
+
+.room-section{
+  padding:50px 0; 
+}
+
+.room-section .section-flex{
+  display: flex;
+  flex:100%;
+  /* flex-wrap: wrap; */
+}
+
+.room-section .section-flex .section-left{
+  flex:50%;
+}
+
+.room-section .section-left .carousel-inner{
+  /* height: 400px; */
+  display: flex;
+  align-items: center;
+}
+
+.room-section .section-left .carousel-inner img{
+ width: 100%;
+ height: 100%;
+}
+
+
+.room-section .carousel-indicators{ 
+  margin:0;
+  margin-left:80px; 
+  width: 100px;  
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.room-section .carousel-indicators li{  
+  margin: 0 7px;  
+  border-radius: 50%;
+  width: 8px;
+  height: 7px;
+  background-color:white;
+}
+
+.room-section .carousel-indicators li.active{    
+  width: 10px;
+  height: 10px;
+  background-color:black;
+}
+
+
+ /* flex right */
+.room-section .section-flex .section-right{
+  display:block;
+  flex:50%;
+  padding:0;
+  margin-top:0;
+  margin-left:0;
+}
+
+
+.room-section .carousel-content{
+  /* max-width: 500px; */
+  padding: 10px 30px;
+}
+
+
+.room-section .carousel-content h6{
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #654321;  
+ }
+ 
+ .room-section .carousel-content p{
+  padding:20px 0 10px;
+  font-size: 18px;
+  font-weight: 400;
+ }
+ 
+ .room-section .carousel-content ul{
+  padding:20px 30px 10px;
+  font-size: 18px;
+  font-weight: 600;
+ }
+ 
+
+
+/* *****   room-section end  ***** */
+
+
+.menu-section{
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.menu-section h1{
+  color: white;
+  margin:0;
+  padding: 20px 0;
+  background: #76e045;
+  font-size: 50px;
+  margin-bottom: 80px;
+}
+
+.menu-section a{
+  color: white;
+  border-radius: 40px;
+  font-size: 20px;
+  padding:17px 50px;
+  font-weight: 700;
+  background: #654321;
+  border:3px solid #654321;
+  transition: .2s ease-in;
+}
+
+.menu-section a:hover{
+  color:#654321;
+  background: transparent;
+  text-decoration: none;
+}
+
+
+
+
+
+/* *********************************  Our Villa  ***************************** */
+
+.ourVilla{
+  padding: 50px 0; 
+}
+
+.ourVilla .header-content{
+  padding:50px 0;
+  text-align: center;
+} 
+
+.ourVilla .logo{
+  padding-bottom: 40px;
+  max-width: 300px;
+}
+
+.ourVilla .header-content h2{
+  font-size: 50px;
+  color: black;
+} 
+
+.ourVilla .header-content h4{
+  padding-top: 30px;
+  font-size: 80px;
+  color: #654321;
+} 
+
+.ourVilla .header-content p{
+  margin: 0 auto;
+  max-width: 700px;
+  padding-top: 30px;
+  font-size: 22px;
+  color: #654321;
+  margin-bottom: 30px;
+} 
+
+.ourVilla .header-content span{
+  font-size: 17px;
+  color:  #76e045;
+} 
+
+
+
+
+
+.villa{
+  padding:60px 0;
+}
+
+.villa-flex{ 
+  display: flex;
+  flex: 100%;
+  flex-wrap: wrap;
+}
+
+ .villa-flex .villa-left{
+    flex:50%;
+    position: relative;
+}
+
+ .villa .content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ 
+ .villa .para{
+    /* max-width: 450px; */
+    padding: 0 20px;
+    margin:20px 0; 
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--border-dark-color);
+ }
+ 
+
+ .villa-flex .villa-right{
+  flex:50%;
+  display: flex;
+  align-items: center;   
+}
+ 
+ .villa .villa-img-container{
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+ .villa .villa-img{
+    width: 100%;
+    /* max-width: 400px; */
+}
+
+
+/* *********************  Section 6  Courses  start   ************************ */
+
+.book-villa{
+  padding:80px 0;
+}
+
+.book-villa .title{
+  text-align: center;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.book-villa  .course-grid{
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  grid-column-gap: 50px;  
+  grid-row-gap: 50px;
+}
+
+.book-villa  .course-grid .block{
+padding:40px 0;
+text-align: center;
+margin:0 auto;
+width: 100%;
+height:500px;
+overflow: hidden;
+transition: .4s ease-in-out;
+border-radius: 12px;
+border:2px solid var(--text-color) ;
+z-index: 111;
+}
+
+
+.book-villa  .course-grid .block .img-container{
+  width: 100%;
+  height: 60%;
+  }
+
+.book-villa  .course-grid .block img{
+width: 100%;
+height: 100%;
+}
+
+.book-villa  .course-grid .block h2{
+  padding-top:30px;
+  font-size:24px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin:0;
+  padding-bottom: 30px;
+}
+
+.book-villa  .course-grid .block a{
+  padding: 14px 30px;
+  font-size:24px;
+  font-weight: 500;
+  text-transform: capitalize;
+  background: #654321;
+  color:whitesmoke;
+  transition: .2s ease-in;
+}
+
+.book-villa  .course-grid .block a:hover{
+border-radius: 30px;
+text-decoration: none;
+}
+
+
+
+/* *** section 6 end **** */
+
+
+/* ********************************  Return and Refund Pages  ******************************** */
+
+.return{
+  padding: 50px;
+}
+
+.return h1{
+  font-size:60px;
+  padding-bottom: 20px;
+}
+
+.return ol{
+  margin-bottom: 50px;
+  padding-left: 20px;
+}
+
+.return ol li{
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 7px;
+}
+
+.return h3{
+  padding-bottom: 20px;
+}
+
+
+
+.privacy{
+  padding: 50px 80px;
+}
+
+.privacy h2{
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: .3px;
+}
+
+.privacy h5{
+  color: #654321;
+  font-size: 28px;
+  font-weight: 600;
+   margin-bottom: 20px;
+}
+
+.privacy h6{
+  color: #0b8457;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.privacy p{
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.privacy li{
+  font-size: 18px;
+  font-weight: 700
+}
+
+
+
+
+
+
+
+@media (max-width: 500px){
+
+  /* ********  Social bar   *********** */
+
+    
+.social-bar{
+  height: auto;
+  padding:5px 10px;
+}
+
+.social-bar .social-icons img{
+  width: 20px;
+}
+
+.social-bar h3{
+  font-size: 13px;
+}
+
+.social-bar span{
+  font-size: 17px;
+}
+
+.social-bar h3{
+  font-size: 14px;
+}
+
+.social-bar span{
+  font-size: 13px;
+}
+
+}
+
+
+
+
+@media (max-width: 768px){
+
+  .villa-flex .villa-left{
+    flex:100%;
+}
+
+.villa-flex .villa-right{
+  flex:100%;
+}
+
+.section-flex .section-left{
+  flex:100%;
+  position: relative;
+}
+
+.section-flex .section-right{
+  flex:100%;
+  position: relative;
+}
+
+.section-flex .section-right{ 
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+}
+
+
+
