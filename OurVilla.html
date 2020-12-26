@@ -229,7 +229,7 @@ if (url != 'http://www.sunnsandhotel.com/' && url != 'index-2.html')
                 <h2>Enjoy the luxurious 4th floor suite with lavish and spacious rooms with private balcony. 
                     Enquire Now for group bookings and special offers.</h2>
 
-                <a href="" class="vila-button">Book Now </a>    
+                <a href="contact.html" class="vila-button">Book Now </a>    
             </div>  <!-- Block finished -->
 
             <div class="block">
@@ -237,7 +237,7 @@ if (url != 'http://www.sunnsandhotel.com/' && url != 'index-2.html')
                     <img src="images/vila/pr2.jpg" alt="Pooja Villa rooms">
                 </div>
                 <h2>Premium suites with luxury rooms and premium amenities. All suites are provided with mini-fridge, wifi, air-conditioning and other features.</h2>
-                <a href="" class="vila-button">Book Now </a>
+                <a href="contact.html" class="vila-button">Book Now </a>
              </div>  <!-- Block finished -->
 
 
@@ -255,91 +255,7 @@ if (url != 'http://www.sunnsandhotel.com/' && url != 'index-2.html')
 
 
 </section>
-
-<script src="../cdn.jsdelivr.net/npm/%40fancyapps/fancybox%403.5.7/dist/jquery.fancybox.min.js"></script><!-- References: https://github.com/fancyapps/fancyBox --><style>
-													.gallery
-													{
-													/* display: inline-block; */
-													margin-top: 20px;
-													}.img-responsive {object-fit: cover;}
-													</style> 
-													<script type="text/javascript">
-															$(document).ready(function() { //https://github.com/fancyapps/fancyBox
-																	   $(".fancybox").fancybox({
-																	   openEffect: "none",
-																	   closeEffect: "none"
-															});
-														  });
-													</script><div class="gallerypage"><div class="container galleryupdate"><div class="row"><div class="list-group gallery"><h1 class="title">Photo Gallery</h1><div class="col-md-4 col-sm-4">
-														<!-- <figure> <a class="d-block mb-4" data-fancybox="images" href="images/63daa7e41f8b599363119761dc0578a1.jpg" > <img class="img-fluid img-gallery"src="images/full/g15.JPG" /> </a><figcaption><h6></h6></figcaption>
-														</figure></div><div class="col-md-4 col-sm-4"><figure> <a class="d-block mb-4" data-fancybox="images" href="" > <img class="img-fluid img-gallery" src="images/full/g13	.JPG" /> </a><figcaption><h6></h6></figcaption>
-														</figure></div><div class="col-md-4 col-sm-4"><figure> <a class="d-block mb-4" data-fancybox="images" href="" > <img class="img-fluid img-gallery" src="images/full/g19.JPG"/> </a><figcaption><h6></h6></figcaption>
-														</figure></div><div class="col-md-4 col-sm-4"><figure> <a class="d-block mb-4" data-fancybox="images" href="" > <img class="img-fluid img-gallery" src="images/full/g4.JPG" /> </a><figcaption><h6></h6></figcaption>
-														</figure></div><div class="col-md-4 col-sm-4"><figure> <a class="d-block mb-4" data-fancybox="images" href="" > <img class="img-fluid img-gallery" src="images/full/g5.JPG"/> </a><figcaption><h6></h6></figcaption>
-														</figure></div><div class="col-md-4 col-sm-4"><figure> <a class="d-block mb-4" data-fancybox="images" href="" > <img class="img-fluid img-gallery" src="images/full/g6.JPG" /> </a><figcaption><h6></h6></figcaption>
-														</figure></div><div class="col-md-4 col-sm-4"><figure> <a class="d-block mb-4" data-fancybox="images" href="" > <img class="img-fluid img-gallery" src="images/full/g7.JPG"/> </a><figcaption><h6></h6></figcaption>
-														</figure></div><div class="col-md-4 col-sm-4"><figure> <a class="d-block mb-4" data-fancybox="images" href="" > <img class="img-fluid img-gallery" src="images/full/g8.JPG" /> </a><figcaption><h6></h6></figcaption>
-														</figure></div><div class="col-md-4 col-sm-4"><figure> <a class="d-block mb-4" data-fancybox="images" href="" > <img class="img-fluid img-gallery" src="images/full/g9.JPG"/> </a><figcaption><h6></h6></figcaption>
-								 -->
-														</figure></div><script>
-
-																	// Clone defaults
-																	var imgOpts = $.extend(true, {}, $.fancybox.defaults, {
-																		caption : function( instance, item ) {
-																			return $(this).next('figcaption').html();
-																		}
-																	});
-
-																	// Shortcut to apply options to image gallery
-																	function applyImgOpts() {
-																		$('[data-fancybox="images"]').fancybox(imgOpts);
-																	}
-
-																	$("#imgOpts select").change(function () {
-																		var opt = $(this).attr("id");
-																		var val = $(this).val();
-
-																		imgOpts[opt] = val === "" ? false : val;
-
-																		// Make "fade" transiton faster than others
-																		if (opt === 'transitionEffect') {
-																			imgOpts['transitionDuration'] = opt === 'fade' ? 330 : 550;
-																		}
-
-																		applyImgOpts();
-																	});
-
-																	$("#imgOpts input[type=radio][name=lang]").on("change", function () {
-																		imgOpts.lang = $(this).val();
-
-																		applyImgOpts();
-																	});
-
-																	$("#imgOpts .toggle").change(function () {
-																		if (this.id === 'thumbs') {
-																			imgOpts.thumbs.autoStart = this.checked ? true : false;
-																		} else {
-																			imgOpts[this.id] = this.checked ? true : false;
-																		}
-
-																		applyImgOpts();
-																	});
-
-																	$("#imgOpts .buttons").change(function () {
-																		var buttonArr = $('input:checkbox:checked.buttons').map(function () {
-																			return this.value;
-																		}).get();
-
-																		buttonArr.push('close');
-
-																		imgOpts.buttons = buttonArr;
-
-																		applyImgOpts();
-																	});
-
-																	applyImgOpts();
-
-																</script></div></div></div></div><footer class="ss-footer">
+<footer class="ss-footer">
    
 
       
@@ -350,23 +266,13 @@ if (url != 'http://www.sunnsandhotel.com/' && url != 'index-2.html')
     <h2 class="main-card-title"> Discover our Locations</h2>
     
     <div class="ss-tabs">
-    <ul class="nav nav-tabs">
-        <li class="active"><a data-toggle="tab" href="#home"></a></li>
-        <!-- <li><a data-toggle="tab" href="#menu1">Shirdi</    a></li> -->
-    </ul>
     
     <div class="tab-content">
     <div class="tab-pane fade in active" id="home">
     <h3>Igatpuri, Nashik, </h3>
     
     <p>Nature’s Dreamland is a traveller’s paradise who wants to take a break & come away from the city’s hustle & bustle then Natures Dreamland is the ideal choice for you. Resided in between the beautiful green hills of Igatpuri .</p>
-    <!-- <a class="btn btn-primary" href="index.html">Know More info.</a></div> -->
     
-    <!-- <div class="tab-pane fade" id="menu1">
-    <h3>Shirdi</h3>
-    
-    <p>The holy land of Sai Baba beckons you, Nature's DreamlandShirdi, the only five star hotel located at a ten minute walking distance from the Sai Baba temple. Set amidst lush green tranquility and five acres of nirvana, simply sit back and let your senses take in the sights & sounds, reflect on a set of memories which will remain with your forever.</p>
-    <a class="btn btn-primary" href="shirdi/index.html">Know More info.</a></div> -->
     </div>
     </div>
         </div>
@@ -405,7 +311,7 @@ if (url != 'http://www.sunnsandhotel.com/' && url != 'index-2.html')
   
       <div class="col-md-3">
           <h4>Nature’s Dreamland</h4>
-          <p><i class="fa fa-map-marker"></i>Natures Dreamland Holiday Homes, Plot No 538, Mango Farms, Malunje Village, Waghere, Igatpuri, Nashik 422 403.<br>
+          <p><i class="fas fa-location-arrow"></i>Natures Dreamland Holiday Homes, Plot No 538, Mango Farms, Malunje Village, Waghere, Igatpuri, Nashik 422 403.<br>
           <i class=" mt-5 fa fa-phone"></i> <a href="tel:89286 76165">89286 76165</a> <br>
           <i class="fa fa-phone"></i><a href="tel:8850013274">8850013274</a><br>
           <i class="mt-4 fa fa-envelope"></i> reservations@naturesdreamland.com<br></p>
@@ -414,7 +320,7 @@ if (url != 'http://www.sunnsandhotel.com/' && url != 'index-2.html')
   
       <div class="col-md-4">
         <h4>Sales & Reservation Office</h4>
-        <p><i class="fa fa-map-marker"></i> 802, B wing, Fair Link Center, Sevadas Chs Ltd, Off Link Road, Andheri West Mumbai, Pin 400053.<br>
+        <p><i class="fas fa-location-arrow"></i> 802, B wing, Fair Link Center, Sevadas Chs Ltd, Off Link Road, Andheri West Mumbai, Pin 400053.<br>
             <i class=" mt-5 fa fa-envelope"></i>  info@naturesdreamland.com </p>
       </div>  
       </div><br><br>

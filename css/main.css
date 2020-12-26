@@ -35,11 +35,12 @@ body{
 }
 
 .room-button{
+  display:inline!important;
   padding:10px;
-  border:2px solid  #76e045;
+  border:2px solid  #0d8549!important;
   border-radius: 4px;
   font-size: 20px;
-  color: #76e045;
+  color:#0d8549!important;
   font-weight: 800;
   text-transform: uppercase;
   transition: .2s ease-in;
@@ -48,8 +49,12 @@ body{
 
 .room-button:hover{
   text-decoration: none;
-  background:  #76e045;
-  color: whitesmoke;
+  background: #0d8549;
+  color: whitesmoke!important;
+}
+
+.dropdown-menu{
+  padding:0!important;
 }
 
 
@@ -58,8 +63,12 @@ body{
   padding: 7px;
 }
 
+/* .dropdown-menu.show{
+  padding:0!important;
+} */
+
 .dropdown .dropdown-menu a:hover{
-  background: #D0E5B0;
+  background:  #654321;
 }
 
 
@@ -95,7 +104,7 @@ body{
   display:flex;
   justify-content: space-around;
   align-items: center;
-  background: #76e045;
+  background: #654321;
   transition: .4s;
 }
 
@@ -112,22 +121,20 @@ body{
 .social-bar h3{
   font-size: 16px;
   font-weight: 600;
-}
-
-.social-bar span{
-  font-size: 17px;
-  font-weight: 800;
-}
-
-.social-bar h3{
-  font-size: 16px;
-  font-weight: 600;
     color: whitesmoke;
 }
 
-.social-bar span{
+.social-bar a{
+  color: whitesmoke;
   font-size: 17px;
-  font-weight: 800;
+  font-weight: 600;
+  transition: .2s ease-in;
+}
+
+.social-bar a:hover{
+  text-decoration: none;
+  color: whitesmoke;
+  opacity: .7;
 }
 
 
@@ -168,7 +175,7 @@ body{
     margin: 0 auto;
     width: 100%;
     height: auto;
-    overflow: hidden;
+
     transition: .4s ease-in-out;
     border-radius: 12px;
     background: var(--light-background-color);
@@ -243,8 +250,9 @@ body{
      margin: 0 auto;
      max-width: 1000px;
      text-align: center;
-    padding:0px 20px 40px;
+    padding:20px 20px 70px;
     font-size: 20px;
+    font-weight: 500;
   }
  
  .work-grid{
@@ -349,16 +357,16 @@ body{
       display: flex;
       flex-direction: column;
       justify-content: center;
-      border:3px solid #76e045;
+      border:3px solid  #0d8549;
   }
   
    .section .title{
-    color: #76e045;
+    color:  #0d8549;
     margin: 0;
     font-size:45px;
     font-weight: 700;
     text-transform: normal;
-    max-width: 500px;
+    max-width: 600px;
   }
   
     .section .subtitle{
@@ -444,10 +452,8 @@ body{
 
 .footer{
     padding: 50px 0px 10px;
-    /* background: #cfa357; */
-    /* background:  #d2ab67; */
-    background:#3f3b3b;
     background: #654321;
+    text-align: center;
   }
 
   footer img{
@@ -455,8 +461,9 @@ body{
 }
 
   .footer h4{
-    font-size: 22px;
-    font-weight: 500;
+    padding:10px;
+    font-size: 25px;
+    font-weight: 600;
     padding-bottom: 10px;
     font-family: 'Roboto', sans-serif!important;
     color:#efecec;
@@ -479,7 +486,7 @@ body{
 }
 
 .footer p{
-    text-align: left;
+  padding:10px;
     font-size: 14px;
     font-family: 'Roboto', sans-serif!important;
     font-weight: 700!important;
@@ -489,11 +496,11 @@ body{
 .footer p i{
    margin:10px 0;
    margin-right:8px;
+   text-align: center;
 }
 
 .footer .col-md-12 p{
     max-width: 100%!important;
-    text-align: center;
     font-weight: 700!important;
     font-size: 16px!important;
     font-family: 'Roboto', sans-serif!important;
@@ -502,10 +509,13 @@ body{
 footer ul li{
     list-style: none;
      padding:4px 0;
+     text-align: center;
+     margin:0 auto;
 }
 
 footer ul li a,
 footer a{
+  text-align: center;
     font-weight: 500;
     list-style: none;
     font-size: 17px;
@@ -537,7 +547,7 @@ footer a:hover{
     font-size: 65px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #76e045;
+    color:  #0d8549;
 }
 
 
@@ -666,7 +676,7 @@ footer a:hover{
   color: white;
   margin:0;
   padding: 20px 0;
-  background: #76e045;
+  background:  #0d8549;
   font-size: 50px;
   margin-bottom: 80px;
 }
@@ -695,7 +705,7 @@ footer a:hover{
 /* *********************************  Our Villa  ***************************** */
 
 .ourVilla{
-  padding: 50px 0; 
+  padding: 50px 0 0; 
 }
 
 .ourVilla .header-content{
@@ -709,6 +719,7 @@ footer a:hover{
 }
 
 .ourVilla .header-content h2{
+  padding:10px;
   font-size: 50px;
   color: black;
 } 
@@ -821,7 +832,6 @@ text-align: center;
 margin:0 auto;
 width: 100%;
 height:500px;
-overflow: hidden;
 transition: .4s ease-in-out;
 border-radius: 12px;
 border:2px solid var(--text-color) ;
@@ -871,7 +881,7 @@ text-decoration: none;
 /* ********************************  Return and Refund Pages  ******************************** */
 
 .return{
-  padding: 50px;
+  padding: 100px 50px;
 }
 
 .return h1{
@@ -997,20 +1007,49 @@ text-decoration: none;
   flex:100%;
 }
 
+
+.section .title{
+  padding-top: 20px;
+  font-size: 35px;
+}
+
 .section-flex .section-left{
   flex:100%;
   position: relative;
 }
 
 .section-flex .section-right{
+  padding:0;
   flex:100%;
   position: relative;
 }
 
 .section-flex .section-right{ 
-  margin-top: 0px;
+  margin-top: 30px;
   margin-left: 0px;
 }
+
+.home-resturant .section-flex .section-right{
+  padding:0;
+  margin-top: 30px;
+  margin-left: 0px;
+}
+
+
+.ourVilla .header-content h2{
+  padding:10px;
+  font-size: 35px;
+} 
+
+.ourVilla .header-content h4{
+  font-size: 50px;
+} 
+
+
+  .footer h4{
+    margin-top: 30px;
+  }
+  
 
 }
 

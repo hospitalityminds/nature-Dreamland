@@ -36,3 +36,10 @@ $(window).scroll(function () {
       $(".social-bar").removeClass("social-none");
     }
   });
+
+
+
+
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
