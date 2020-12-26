@@ -68,18 +68,18 @@ body{
   padding: 50px 0;
 }
 
-.carousel-inner{
+.swiper .carousel-inner{
   width: 100%;
   height: 550px;
  
 }
 
-.carousel-item{
+.swiper .carousel-item{
   width: 100%;
   height: 100%;
 }
 
-.carousel-item img{
+.swiper .carousel-item img{
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -728,9 +728,15 @@ footer a:hover{
   margin-bottom: 30px;
 } 
 
-.ourVilla .header-content span{
-  font-size: 17px;
-  color:  #76e045;
+.ourVilla .header-content span a{
+  font-size: 18px;
+  font-weight: 800;
+  color:   #654321;
+} 
+
+.ourVilla .header-content span a:hover{
+  opacity: .8;
+  text-decoration: none;
 } 
 
 
@@ -927,6 +933,21 @@ text-decoration: none;
 
 
 
+
+/* ************************  Gallery start   ************************ */
+
+
+.popup-gallery{
+  padding: 120px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-column-gap: 30px;
+  grid-row-gap: 50px;
+}
+
+.popup-gallery img{
+ max-width: 100%;
+}
 
 
 
