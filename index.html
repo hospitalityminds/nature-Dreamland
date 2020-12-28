@@ -220,7 +220,7 @@ if (url != 'http://www.sunnsandhotel.com/' && url != 'index-2.html')
 <div class="slide-from-left white-bg2">&nbsp;</div>
 
 <div class="videoWrap">
-    <video  autoplay="" loop="" class="videobgcls" id="bgvid" ><source src="video/Cover-1.mp4" type="video/mp4" /></video>
+    <video  autoplay="" loop="" class="videobgcls" id="bgvid" ><source src="video/Cover-1.mp4" class="cover-video" type="video/mp4" /></video>
 </div>
 
     
@@ -407,7 +407,7 @@ if (url != 'http://www.sunnsandhotel.com/' && url != 'index-2.html')
 
         <div class="swiper">
                     
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="25z`00">
+            <div id="HotelImage" class="carousel slide" data-ride="carousel" data-interval="2500">
                 <div class="carousel-inner">
                     <div class="carousel-item  c1 active">
                         <img class="d-block" src="images/vila/r14.JPG" alt="First slide">
@@ -438,12 +438,12 @@ if (url != 'http://www.sunnsandhotel.com/' && url != 'index-2.html')
                     </div>
                 </div>
 
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#HotelImage" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
                 </a>
 
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#HotelImage" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
                 </a>
@@ -583,6 +583,7 @@ if (url != 'http://www.sunnsandhotel.com/' && url != 'index-2.html')
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
@@ -593,7 +594,7 @@ if (url != 'http://www.sunnsandhotel.com/' && url != 'index-2.html')
         // $('.cmn-arrowRight').on('click', function(){
         //     $('#myCarousel1').carousel('next');
         // });
-$(window).on('scroll', function(){
+  $(window).on('scroll', function(){
             if($(window).scrollTop() > 20){
                 $('.ss-header').addClass('scrolled');
             } else {
@@ -666,7 +667,7 @@ $(window).on('scroll', function(){
 
 <!-- Mirrored from www.sunnsandhotel.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Dec 2020 09:39:21 GMT -->
 
-<script>
+<!-- <script>
     var swiper = new Swiper('.swiper-container', {
       effect: 'coverflow',
       grabCursor: true,
@@ -683,7 +684,23 @@ $(window).on('scroll', function(){
         el: '.swiper-pagination',
       },
     });
-  </script>
+  </script> -->
+
+
+
+
+
+<script>
+
+    window.addEventListener('load', (event) => {
+         if(window.outerWidth > 768){
+               document.querySelector('.cover-video').src = 'video/cover-1.mp4';
+         }
+         else{
+            document.querySelector('.cover-video').src = 'video/cover.mp4';
+         }
+    });
+</script>
 
 
 

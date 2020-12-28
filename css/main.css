@@ -964,6 +964,8 @@ text-decoration: none;
 
 @media (max-width: 500px){
 
+
+
   /* ********  Social bar   *********** */
 
     
@@ -999,13 +1001,44 @@ text-decoration: none;
 
 @media (max-width: 768px){
 
-  .villa-flex .villa-left{
-    flex:100%;
+
+  .privacy{
+    padding: 50px 20px;
+  }
+  
+
+
+  /* ********************************  Return and Refund Pages  ******************************** */
+
+.return{
+  padding: 100px 20px;
 }
 
-.villa-flex .villa-right{
-  flex:100%;
+.return h1{
+  font-size:30px;
 }
+
+.return ol{
+  margin-bottom: 50px;
+}
+
+.return ol li{
+  font-size: 16px;
+}
+
+
+  .villa-flex .villa-left{
+    flex:100%;
+  }
+
+  .villa-flex .villa-right{
+    flex:100%;
+  }
+
+  .villa .para{
+    padding: 0px;
+    font-size: 19px;
+ }
 
 
 .section .title{
@@ -1035,14 +1068,21 @@ text-decoration: none;
   margin-left: 0px;
 }
 
-
-.ourVilla .header-content h2{
+.ourVilla .header-content{
   padding:10px;
   font-size: 35px;
 } 
 
+
+
+.ourVilla .header-content h2{
+  padding:10px;
+  font-size: 30px;
+} 
+
 .ourVilla .header-content h4{
-  font-size: 50px;
+  font-size: 40px;
+  padding:10px;
 } 
 
 
